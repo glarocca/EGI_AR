@@ -5,7 +5,7 @@ This repository utilizes the [EGI Operations Portal](https://operations-portal.e
 Final data is uploaded in a Google Sheet using the [GSpread API](https://docs.gspread.org/en/latest/)
 
 ## Pre-requisites
-* `Python 3.10.12+` installed on your local compute
+* `Python 3.12.3+` installed on your local compute
 
 ## Creating a Google Service Account
 
