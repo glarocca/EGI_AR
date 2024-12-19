@@ -2,6 +2,8 @@
 
 This repository utilizes the [EGI Operations Portal](https://operations-portal.egi.eu/) and the [EGI Accounting](https://accounting.egi.eu/) APIs to retrieve data and generate statistics for the EGI Annual Report.
 
+Final data is uploaded in a Google Sheet using the [GSpread API](https://docs.gspread.org/en/latest/)
+
 ## Pre-requisites
 * `Python 3.10.12+` installed on your local compute
 
