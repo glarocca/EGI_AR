@@ -1,0 +1,1960 @@
+[
+  {
+     "vos": [
+     {
+	     "vo": [
+                 {
+                   "Name": "aegis",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "aiidalab-demo.materialscloud.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },	 	 
+                 {
+                   "Name": "ams02.cern.ch",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "aquamonitor.c-scale.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+	         {
+                   "Name": "argo2",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "armgrid.grid.am",
+                   "Discipline": "",
+                   "VO status": "Inactive",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+		 {
+                   "Name": "astro.vo.eu-egee.org",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "astron",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "atlas",
+   		   "Discipline": "HEP",
+   	           "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "atlas.ac.il",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "auger",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "auvergrid",
+                   "Discipline": "",
+                   "VO status": "Inactive",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+		 {
+                   "Name": "balticgrid",
+                   "Discipline": "",
+                   "VO status": "Inactive",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "belle",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "belle2.org",
+                   "Discipline": "HEP",
+                   "VO status": "Inactive",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "bg-edu.grid.acad.bg",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Inactive",
+                   "Type": "Training"
+                 },
+	         {	 
+                   "Name": "bbmri.nl",
+                   "Discipline": "Medical and Health Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+		 {  
+                   "Name": "beapps",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+		 {
+                   "Name": "biomed",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "bioinfo.twgrid.org",
+                   "Discipline": "Health Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		
+                 {
+                   "Name": "bioisi",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 }, 
+                 {
+                   "Name": "blazarmonitoring.asi.it",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "calice",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "calet.org",
+                   "Discipline": "Optics",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "camont",
+                   "Discipline": "Clinical Medicine",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+		 {
+                   "Name": "cdf",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "cesga",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "cernatschool.org",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },
+		 {
+                   "Name": "chem.vo.ibergrid.eu",
+                   "Discipline": "",
+                   "VO status": "Inactive",
+                   "Type": ""
+                 },
+		 {
+                   "Name": "chipster.csc.fi",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "cloud.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {
+                   "Name": "cloudferro.com",
+                   "Discipline": "Space Sciences",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+	         {	 
+                   "Name": "comet.j-parc.jp",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {	 
+                   "Name": "compchem",
+                   "Discipline": "Chemical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {       
+                   "Name": "comput-er.it",
+                   "Discipline": "Other",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "cos4cloud-eosc.eu",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "covid19.eosc-synergy.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "cms",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "creodias.eu",
+                   "Discipline": "Space Sciences",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },
+                 {
+                   "Name": "cryoem.instruct-eric.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "culturalheritage.vo.egi.eu",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+		 {
+                   "Name": "dech",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },
+                 {
+                   "Name": "deep-hybrid-datacloud.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "demo.fedcloud.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+	         {	 
+                   "Name": "desy",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "desy-cc.de",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+		 {
+                   "Name": "desktopgrid.vo.edges-grid.eu",
+                   "Discipline": "Inactive",
+                   "VO status": "",
+                   "Type": ""
+                 },
+                 {       
+                   "Name": "dev.intertwin.eu",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "digitalearthsweden.vo.egi.eu",
+                   "Discipline": "Earth Observation",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+                 {
+                   "Name": "dirac.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+	         {	 
+                   "Name": "dream.hipcat.net",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "drihm.eu",
+	           "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "dteam",
+                   "Discipline": "Infrastructure Development",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },
+                 {       
+                   "Name": "dune",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "d4science.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "edison.eu",
+                   "Discipline": "Training/Demonstrator",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "ehoney.infn.it",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "eiscat.se",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "eli-laser.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+		 { 
+                   "Name": "eli-np.eu",
+                   "Discipline": "Nuclear Physics",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+	         {	 
+                   "Name": "enea",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {		 
+                   "Name": "eng.vo.ibergrid.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Inactive",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+		 {
+                   "Name": "enmr.eu",
+                   "Discipline": "Structural Biology",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "eosc-synergy.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "EOServices-vo.indra.es",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "epic.vo.gridpp.ac.uk",
+                   "Discipline": "Medical and Health Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "ericll.org",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "esr",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "euasia.euasiagrid.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+		 {
+                   "Name": "euchina",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+		 },
+                 {
+                   "Name": "euindia",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "eumed",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "eval.c-scale.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+                 {
+                   "Name": "extras-fp7.eu",
+                   "Discipline": "Astrophysics",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "fedcloud.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },		 
+		 {
+                   "Name": "fermilab",
+                   "Discipline": "Accelerator Physics",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "fermi-lat.infn.it",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "flu.cas.cz",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "fusion",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "gaussian",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "ghep",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "gilda",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+		 { 
+                   "Name": "geant4",
+                   "Discipline": "Chemical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "geohazards.terradue.com",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "gerda.mpg.de",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "glast.org",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {       
+                   "Name": "gosafe.eng.it",
+                   "Discipline": "Other",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+		 {
+                   "Name": "gridit",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+	         {	 
+                   "Name": "gridifin.ro",
+                   "Discipline": "Nuclear Physics",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+		 {
+                   "Name": "gridpp",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "harpo.cea.fr",
+                   "Discipline": "Astroparticle Physics",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "hermess",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "hidronav.eosc-hub.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "hone",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "hydrology.terradue.com",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "hyperk.org",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "iber.vo.ibergrid.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+	         {	 
+                   "Name": "icarus-exp.org",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "icecube",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "ific",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "ilc",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "ildg",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "imath.cesga.es",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "inaf",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "infngrid",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+	         {	 
+                   "Name": "ipv6.hepix.org",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {
+                   "Name": "iris.ac.uk",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "ispravision.vo.egi.eu",
+                   "Discipline": "Agriculture",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 }, 
+	         {	 
+                   "Name": "juno.ihep.ac.cn",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "km3net.org",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+	         {	 
+                   "Name": "lagoproject.net",
+                   "Discipline": "Astrophysics",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+	         {	 
+                   "Name": "lattice.itep.ru",
+                   "Discipline": "",
+		   "VO status": "Inactive",
+                   "Type": ""
+                 },
+	         {	 
+                   "Name": "lhcb",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "lofar",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "lsgrid",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "lsst",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "lz",
+                   "Discipline": "Particle Physics",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "magic",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {       
+                   "Name": "mathematical-software",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "med.semmelweis-univ.hu",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "mice",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "moldyngrid",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "mug2ej.kek.jp",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "mswss.ui.savba.sk",
+                   "Discipline": "Environmental Biotechonlogy",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {
+                   "Name": "mteam.data.kit.edu",
+                   "Discipline": "Information Sciences",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },
+                 {
+                   "Name": "muoncoll.infn.it",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "na62.vo.gridpp.ac.uk",
+                   "Discipline": "Particle Physics",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "neiss.org.uk",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "net.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+	         {	 
+                   "Name": "neurogrid.incf.org",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "nordugrid.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "o3as.data.kit.edu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+		 {
+                   "Name": "ops",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },
+                 {
+                   "Name": "ops.ndgf.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {
+                   "Name": "opencoast.eosc-hub.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "openrisknet.org",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "pamela",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "pangeo.c-scale.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+		 {
+                   "Name": "peachnote.com",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },
+                 {
+                   "Name": "perla-pv.ro",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "pheno",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "phys.vo.ibergrid.eu",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "physiome.lf1.cuni.cz",
+                   "Discipline": "",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {
+                   "Name": "pvier",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+		 {
+                   "Name": "planck",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "prod.vo.eu-eela.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "projects.nl",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+                 {
+                   "Name": "rdfa",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "ronbio.ro",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "sagrid.ac.za",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+                 {
+                   "Name": "saps-vo.i3m.upv.es",
+                   "Discipline": "Environmental Engineering",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+	         {	 
+                   "Name": "see",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Inactive",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {       
+                   "Name": "skatelescope.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+		 {
+                   "Name": "snoplus.snolab.ca",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "solidexperiment.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "superbvo.org",
+                   "Discipline": "Particle Physics",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "supernemo.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "supernemo.vo.eu-egee.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Inactive",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "terrascope.c-scale.eu",
+                   "Discipline": "Agriculture, forestry, and fisheries",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+		 {
+                   "Name": "t2k.org",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "tut.vo.ibergrid.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },
+                 {
+                   "Name": "training.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },		 
+	         {	 
+                   "Name": "ukmhd.ac.uk",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "ukqcd",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "umsa.cerit-sc.cz",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+                 {
+                   "Name": "university.eosc-synergy.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Prodution",
+                   "Type": "Training"
+                 },		 
+		 {
+                   "Name": "uscms",
+                   "Discipline": "HEP",
+                   "VO status": "Inactive",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "virgo",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {       
+                   "Name": "virgo.intertwin.eu",
+                   "Discipline": "Astrophysics",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+                 {
+                   "Name": "vo.access.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+	         {	 
+                   "Name": "vo.agata.org",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "vo.aginfra.eu",
+                   "Discipline": "Agricultural Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.ai4europe.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.ai4eosc.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.ai4life.eu",
+                   "Discipline": "Health Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },	 	 
+                 {
+                   "Name": "vo.ai4publicpolicy.eu",
+                   "Discipline": "Social Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.aleph.cern.ch",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {       
+                   "Name": "vo.aneris.eu",
+                   "Discipline": "Oceanography",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+		 {
+                   "Name": "vo.apc.univ-paris7.fr",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "vo.astro.pics.es",
+                   "Discipline": "Astronomy",
+                   "VO status": "Inactive",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.bd4nrg.eu",
+                   "Discipline": "Electrical and Electronic Engineering",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.beamide.com",
+                   "Discipline": "Health Sciences",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },	
+                 {
+                   "Name": "vo.bikesquare.eu",
+                   "Discipline": "Civil Engineering",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },
+                 {
+                   "Name": "vo.bioinvest.com.ua",
+                   "Discipline": "Agriculture, Forestry, and Fisheries",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.bioexcel.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.binare-oy.eu",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+                 {       
+                   "Name": "vo.builtrix.tech",
+                   "Discipline": "Energy and Fuels",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },
+                 {
+                   "Name": "vo.cessda.eduteams.org",
+                   "Discipline": "Social Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },	 	 
+                 {
+                   "Name": "vo.clarin.eu",
+                   "Discipline": "Linguistics",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+	         {	 
+                   "Name": "vo.compass.cern.ch",
+                   "Discipline": "Accelerator Physics",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "vo.complex-systems.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.cnic.cn",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+                 {       
+                   "Name": "vo.crmdr.org",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+	         {	 
+                   "Name": "vo.cs.br",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+		 {     
+                   "Name": "vo.cta.in2p3.fr",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+	         {	 
+                   "Name": "vo.dariah.eu",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "vo.darkside.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.dch-rp.eu",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.decido-project.eu",
+                   "Discipline": "Social Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {		 
+                   "Name": "vo.delphi.cern.ch",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.deltares.nl",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "vo.digitbrain.eu",
+                   "Discipline": "Manufacturing",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.earthserver.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.enes.org",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },	
+                 {
+                   "Name": "vo.envrihub.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.environmental.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.e-rihs.eu",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {
+                   "Name": "vo.emphasisproject.eu",
+                   "Discipline": "Phenotyping",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {
+                   "Name": "vo.ebrain-health.eu",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.egu2024.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },		 
+                 {
+                   "Name": "vo.emsodev.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },	 
+                 {
+                   "Name": "vo.emso-eric.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "vo.envri-fair.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.eries.eu",
+                   "Discipline": "Civil engineering",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.eurobioimaging.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {
+                   "Name": "vo.eurogeoss.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "vo.eurosea.marine.ie",
+                   "Discipline": "Oceanography",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.eosc-siesta.eu",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.europlanet-vespa.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.eu-openscreen.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "vo.formation.idgrilles.fr",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Training"
+                 },		 
+                 {
+                   "Name": "vo.gear.cern.ch",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },	
+                 {
+                   "Name": "vo.geoss.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.grand-est.fr",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.gridcl.fr",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.grif.fr",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+	         {	 
+                   "Name": "vo.helio-vo.eu",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "vo.hess-experiment.eu",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.icrag-centre.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+                 {
+                   "Name": "vo.iiasa.ac.at",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {
+                   "Name": "vo.inactive-sarscov2.eu",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+		 {
+                   "Name": "vo.indicate-project.eu",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.indigo-datacloud.eu",
+                   "Discipline": "Information Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.ingv.it",
+		   "Discipline": "Earth Sciences",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+                 {
+                   "Name": "vo.inteligg.com",
+                   "Discipline": "Energy and Fuels",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+	         {	 
+                   "Name": "vo.ipnl.in2p3.fr", 
+		   "Discipline": "Chemical Sciences",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "vo.ipno.in2p3.fr", 
+		   "Discipline": "Astroparticle Physics",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.i-nergy.eu",
+                   "Discipline": "Energy and Fuels Global",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {		 
+                   "Name": "vo.irfu.cea.fr",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.labplas.eu",
+                   "Discipline": "Ecology Global",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.lal.in2p3.fr", 
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+		 {
+                   "Name": "vo.landslides.mossaic.org",
+		   "Discipline": "Earth Sciences",
+		   "VO status": "Production",
+		   "Type": "EC Project"
+                 },
+	         {	 
+                   "Name": "vo.lapp.in2p3.fr",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+                 {
+                   "Name": "vo.latitudo40.com.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+                 {
+                   "Name": "vo.lethe-project.eu",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.lifewatch.eu",
+		   "Discipline": "Biological Sciences",
+		   "VO status": "Production",
+		   "Type": "Research Infrastructure"
+                 },     
+                 { 
+                   "Name": "vo.llr.in2p3.fr",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "vo.lpnhe.in2p3.fr",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+	         {	 
+                   "Name": "vo.lpsc.in2p3.fr",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.magrid.ma",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },
+                 {
+                   "Name": "vo.neurodesk.eu",
+                   "Discipline": "Neuroscience",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.notebooks.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {
+                   "Name": "vo.pangeo.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "vo.matrycs.eu",
+                   "Discipline": "Energy Saving",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.metacentrum.cz",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+                 {
+                   "Name": "vo.mightee.idia.za",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "vo.moedal.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.mrilab.es",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.msfg.fr", 
+		   "Discipline": "Particle Physics",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "vo.mure.in2p3.fr",
+		   "Discipline": "HEP",
+		   "VO status": "Poduction",
+		   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {       
+                   "Name": "vo.nbis.se",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.nextgeoss.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.northgrid.ac.uk",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {
+                   "Name": "vo.obsea.es",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.opal.cern.ch",
+                   "Discipline": "",
+                   "VO status": "Inactive",
+                   "Type": ""
+                 },
+                 {
+                   "Name": "vo.openbiomaps.org",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.openeo.cloud",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.openrdm.eu",
+                   "Discipline": "Information Sciences",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {
+                   "Name": "vo.operas-eu.org",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {
+                   "Name": "vo.padme.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.panda.gsi.de",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 }, 
+                 {
+                   "Name": "vo.panosc.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.phiri.eu",
+                   "Discipline": "Basic Medicine",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+	         {	 
+                   "Name": "vo.plgrid.pl",
+		   "Discipline": "Miscellaneous",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+                 {
+                   "Name": "vo.plocan.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.primage.eu",
+                   "Discipline": "Clinical Medicine",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.projectescape.eu",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+		 {
+                   "Name": "vo.france-asia.fr",
+		   "Discipline": "Biological Sciences",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+	         {	 
+                   "Name": "vo.france-grilles.fr",
+		   "Discipline": "Miscellaneous",
+		   "VO status": "Production",
+		   "Type": "Regional/national initiatives"
+                 },
+		 {
+                   "Name": "vo.chain-project.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.cite.gr",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+                 {       
+                   "Name": "vo.cictest.fr",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+		 {
+                   "Name": "vo.elixir-europe.org", 
+		   "Discipline": "Biological Sciences",
+		   "VO status": "Production",
+		   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "vo.eoscfuture-sp.panosc.eu",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.esc.pithia.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+	         {	 
+                   "Name": "vo.eu-decide.eu", 
+		   "Discipline": "Basic Medicine",
+		   "VO status": "Production",
+		   "Type": "EC project"
+                 },
+                 {       
+                   "Name": "vo.euro-argo.eu",
+                   "Discipline": "Oceanography",
+                   "VO status": "Production",
+                   "Type": "Research Infrastructure"
+                 },		 
+                 {       
+                   "Name": "vo.france-asia.org",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.imagine-ai.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.instruct.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.oipub.com",
+                   "Discipline": "Computer Sciences",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+		 {
+                   "Name": "vo.neugrid.eu",
+		   "Discipline": "Basic Medicine",
+		   "VO status": "Production",
+		   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.pithia.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+                 {
+                   "Name": "vo.qc-md.eli-np.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.radiotracers4psma.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.reliance-project.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },		 
+	         {	 
+                   "Name": "vo.renabi.fr",
+		   "Discipline": "Bioinformatics",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.rhone-alpes.idgrilles.fr",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+		 {  
+                   "Name": "vo.sbg.in2p3.fr", 
+		   "Discipline": "Physical Sciences",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.seadatanet.org",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {		 
+                   "Name": "vo.sim-e-child.org",
+		   "Discipline": "Medical and Health Sciences",
+		   "VO status": "Production",
+		   "Type": "EC project"
+                 },
+		 {
+                   "Name": "vo.sixt.cern.ch",
+		   "Discipline": "HEP",
+		   "VO status": "Production",
+		   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.scotgrid.ac.uk",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+		 { 
+                   "Name": "vo.sn2ns.in2p3.fr",
+                   "Discipline": "Astronomy",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },
+                 {
+                   "Name": "vo.southgrid.ac.uk",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Regional/national initiatives"
+                 },		 
+                 {
+                   "Name": "vo.sphinxsys.org",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "vo.stars4all.eu",
+                   "Discipline": "Engineering and Technology",
+                   "VO status": "Production",
+                   "Type": "EC project"
+                 },
+                 {
+                   "Name": "vo.thepund.it",
+                   "Discipline": "Humanities",
+                   "VO status": "Production",
+                   "Type": "SME"
+                 },		 
+                 {		 
+                   "Name": "vo.test.cic.1.org", 
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+		 {
+                   "Name": "vo.test.cic.2.org", 
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+	         {	 
+                   "Name": "vo.test.cic.3.org", 
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+		 {
+                   "Name": "vo.test.cic.14.org",
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+	         {	 
+                   "Name": "vo.test.cic.16.org",
+                   "Discipline": "",
+		   "VO status": "Inactive",
+                   "Type": ""
+                 },
+		 { 
+                   "Name": "vo.test.cic.20.org",
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+                 {
+                   "Name": "vo.tools.egi.eu",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Infrastructure development"
+                 },		 
+		 {  
+                   "Name": "vo.turbo.pic.es",
+		   "Discipline": "",
+		   "VO status": "Inactive",
+		   "Type": ""
+                 },
+                 {
+                   "Name": "vo.usegalaxy.eu",
+                   "Discipline": "Biological Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {       
+                   "Name": "vo.waltoninstitute.ie",
+                   "Discipline": "Miscellaneous",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },	      	 
+		 {
+                   "Name": "voce",
+		   "Discipline": "",
+		   "VO status": "Production",
+		   "Type": "Piloting (multi-disciplinary)"
+                 },
+                 {
+                   "Name": "worsica.vo.incd.pt",
+                   "Discipline": "Ocean Engineering",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+	         {	 
+                   "Name": "xenon.biggrid.nl", 
+		   "Discipline": "Astroparticle Physics",
+		   "VO status": "Production",
+		   "Type": "Piloting (multi-disciplinary)"
+                 },
+		 {
+                   "Name": "xfel.eu", 
+		   "Discipline": "Optics",
+		   "VO status": "Production",
+		   "Type": "Research Infrastructure"
+                 },
+                 {
+                   "Name": "xlzd.biggrid.nl",
+                   "Discipline": "Physical Sciences",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 },		 
+                 {
+                   "Name": "waterwatch.c-scale.eu",
+                   "Discipline": "Earth Sciences",
+                   "VO status": "Production",
+                   "Type": "Piloting (multi-disciplinary)"
+                 },		 
+		 {
+                   "Name": "zeus",
+                   "Discipline": "HEP",
+                   "VO status": "Production",
+                   "Type": "Research Community"
+                 }
+	     ]      
+     }
+     ]
+  }
+]
