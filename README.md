@@ -108,6 +108,9 @@ export VOS_DUPLICATES="vos_duplicates.txt"
 
 ## Retrieve data and generate the EGI Annual Report
 ```bash
+
+]$ clear && source openrc.sh && python3 get_research_products_v0.5.py
+
 Verbose Level = DEBUG
 
 [DEBUG] Environmental settings
