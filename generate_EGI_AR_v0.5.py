@@ -132,6 +132,7 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("L50", "=SUM(L3:L19)")
         worksheet_annual.update_acell("M50", "=SUM(M3:M19)")
         worksheet_annual.update_acell("N50", "=SUM(N3:N19)")
+        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'P3:P50', text_fmt)
         worksheet_annual.update_acell("P3", "Engineering and Technology")
@@ -149,6 +150,7 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("P15", "Structural Biology")
         worksheet_annual.update_acell("P16", "Neuroscience")
         worksheet_annual.update_acell("P17", "Engineering and Technology")
+        time.sleep (60)
     
         worksheet_annual.update_acell("P19", "Accelerator Physics")
         worksheet_annual.update_acell("P20", "Aeroscpace Engineering")
@@ -185,6 +187,7 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("R50", "=SUM(R3:R48)")
         worksheet_annual.update_acell("S50", "=SUM(S3:S48)")
         worksheet_annual.update_acell("T50", "=SUM(T3:T48)")
+        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'V3:V50', text_fmt)
         worksheet_annual.update_acell("V3", "Engineering and Technology")
@@ -207,6 +210,7 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("X50", "=SUM(X3:X22)")
         worksheet_annual.update_acell("Y50", "=SUM(Y3:Y22)")
         worksheet_annual.update_acell("Z50", "=SUM(Z3:Z22)")
+        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'AB3:AB50', text_fmt)
         worksheet_annual.update_acell("AB3", "Engineering and Technology")
@@ -226,6 +230,7 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("AD50", "=SUM(AD3:AD22)")
         worksheet_annual.update_acell("AF50", "=SUM(AF3:AF22)")
         worksheet_annual.update_acell("AG50", "=SUM(AG3:AG22)")
+        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'AJ5:AJ12', text_fmt)
         worksheet_annual.update_acell("AJ5", "Research Community")
@@ -236,6 +241,8 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("AJ10", "Regional/national initiatives")
         worksheet_annual.update_acell("AJ11", "Training")
         worksheet_annual.update_acell("AJ12", "Infrastructure development")
+        time.sleep (60)
+        
         status = True
    
      except:
