@@ -5,19 +5,16 @@
 ###################################################
 export ACCOUNTING_SERVER_URL="https://accounting.egi.eu"
 # Available scope: 'cloud', 'egi'
-export ACCOUNTING_SCOPE="cloud" 
+export CLOUD_ACCOUNTING_SCOPE="cloud" 
+export EGI_ACCOUNTING_SCOPE="egi" 
 
 # Available metrics (for scope=cloud):
-# 'sum_elap_processors', 
-# 'mem-GByte', 
-# 'vm_num', 
-# 'sum_elap', 
-# 'cost', 
-# 'net_in', 
-# 'net_out', 
-# 'disk', 
-# 'processors'
-export ACCOUNTING_METRIC="sum_elap_processors"
+# 'sum_elap_processors', 'mem-GByte', 'vm_num', 'sum_elap', 'cost', 'net_in', 'net_out', 'disk', 'processors'
+export CLOUD_ACCOUNTING_METRIC="sum_elap_processors"
+
+# Available metrics (for scope=grid):
+# 'elap_processors', 'njobs', 'normcpu', 'sumcpu', 'normelap', 'normelap_processors', 'sumelap', 'cpueff'
+export EGI_ACCOUNTING_METRIC="elap_processors"
 
 # Available Local Job Selector: 
 # 'onlyinfrajobs', 
@@ -34,17 +31,20 @@ export ACCOUNTING_DATA_SELECTOR="JSON"
 export DATE_FROM="2023/01"
 export DATE_TO="2024/12"
 
+export PAST_YEAR="2023"
+
 ##################################################################
 # E G I ** O P E R A T I O N S ** P O R T A L ** S E T T I N G S #
 ##################################################################
 export OPERATIONS_SERVER_URL="https://operations-portal.egi.eu/api/"
-export OPERATIONS_API_KEY="*************" 
+export OPERATIONS_API_KEY="61ba1a4deec9c" # Giuseppe's API
 export OPERATIONS_FORMAT="json"
 export OPERATIONS_DISCIPLINES_METRICS_PREFIX="vo-metrics-disciplines"
 # Static file containing VOs metadata
 export VOS_METADATA=${PWD}/"vos_metadata.json"
 # Static file containing VO users statistics from the past
-export PREVIOUS_REPORT_VOS_USERS_STATISTICS=${PWD}/`echo ${DATE_FROM} | awk -F'/' '{print $1}'`"_users_metrics.json"
+#export PREVIOUS_REPORT_VOS_USERS_STATISTICS=${PWD}/`echo ${DATE_FROM} | awk -F'/' '{print $1}'`"_users_metrics.json"
+export PREVIOUS_REPORT_VOS_USERS_STATISTICS=${PWD}/${PAST_YEAR}"_users_metrics.json"
 # Exclude VOs with no accounting metrics
 # Possible options: Y, N
 export REMOVE_EMPTY_VO_METRICS="Y"

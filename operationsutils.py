@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#  Copyright 2024 EGI Foundation
+#  Copyright 2025 EGI Foundation
 # 
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -26,8 +26,8 @@ from utils import colourise, highlight, get_env_settings
 __author__    = "Giuseppe LA ROCCA"
 __email__     = "giuseppe.larocca@egi.eu"
 __version__   = "$Revision: 1.1"
-__date__      = "$Date: 20/11/2024 18:23:17"
-__copyright__ = "Copyright (c) 2024 EGI Foundation"
+__date__      = "$Date: 08/02/2025 18:23:17"
+__copyright__ = "Copyright (c) 2025 EGI Foundation"
 __license__   = "Apache Licence v2.0"
 
 
@@ -421,21 +421,46 @@ def get_disciplines_metrics(env, vos_metadata):
                 vos_list = []
                 for vo_item in key['vo']:
                     #try:
+                    # Initialize temporary variables
+                    total_past_CPU_hours = total_current_CPU_hours = 0
+
                     # Get the VO's metadata
                     VO_discipline, VO_status, VO_type = get_VO_metadata(vo_item['name'], vos_metadata) 
                       
-                    # Get the Coud CPU/h usage from the Accounting Portal
-                    raw_data = login_accounting(env, vo_item['name'])
+                    # Get the Cloud CPU/h usage from the Accounting Portal
+                    raw_data = login_accounting(env, vo_item['name'], "cloud")
                     past_CPU_hours, current_CPU_hours = parsing_CPU(raw_data, env)
-                       
+                    
+                    if past_CPU_hours:
+                       total_past_CPU_hours = total_past_CPU_hours + int(past_CPU_hours)
+                    if current_CPU_hours:
+                        total_current_CPU_hours = total_current_CPU_hours + int(current_CPU_hours)
+
+                    print(colourise("yellow", "[INFO]"), \
+                    "Fetching (CLOUD) accounting records for the [%s] VO (%s, %s) " \
+                    %(vo_item['name'], past_CPU_hours, current_CPU_hours))
+                    
+                    raw_data = login_accounting(env, vo_item['name'], "egi")
+                    past_CPU_hours, current_CPU_hours = parsing_CPU(raw_data, env)
+                    
+                    if past_CPU_hours:
+                        total_past_CPU_hours = total_past_CPU_hours + int(past_CPU_hours)
+                    if current_CPU_hours:
+                        total_current_CPU_hours = total_current_CPU_hours + int(current_CPU_hours)
+                      
+                    print(colourise("yellow", "[INFO]"), \
+                    "Fetching (EGI) accounting records for the [%s] VO (%s, %s) " \
+                    %(vo_item['name'], past_CPU_hours, current_CPU_hours))
+
                     if vo_item['NbUsers'] or past_CPU_hours or current_CPU_hours:
                         print(colourise("green", "[INFO]"), \
-                        "\t[Discipline]: %s, [Status]: %s, [Type]: %s, [CPU/h]: %s, %s, [#Users]: %s" \
+                        "[Discipline]: %s, [VO]: %s, [Status]: %s, [Type]: %s, [CPU/h]: %s, %s, [#Users]: %s" \
                         %(VO_discipline, 
+                          vo_item['name'],
                           VO_status, 
                           VO_type, 
-                          past_CPU_hours, 
-                          current_CPU_hours,
+                          total_past_CPU_hours, 
+                          total_current_CPU_hours,
                           str(vo_item['NbUsers'])
                         ))
 
@@ -445,8 +470,8 @@ def get_disciplines_metrics(env, vos_metadata):
                             "VO status": VO_status,
                             "Type": VO_type,
                             "num_Users": str(vo_item['NbUsers']),
-                            "past CPU/h": str(past_CPU_hours),
-                            "current CPU/h": str(current_CPU_hours)
+                            "past CPU/h": str(total_past_CPU_hours),
+                            "current CPU/h": str(total_current_CPU_hours)
                         })
                        
                     else:
@@ -473,7 +498,7 @@ def get_disciplines_metrics(env, vos_metadata):
                 })
 
                 print(colourise("green", "[INFO]"), \
-                     " Metrics for the [%s] discipline: \n %s" \
+                     "Metrics for the [%s] discipline: \n %s" \
                      %(key['value'].upper(), discipline[index]))
 
                 index = index + 1

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#  Copyright 2024 EGI Foundation
+#  Copyright 2025 EGI Foundation
 # 
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ __author__    = "Giuseppe LA ROCCA"
 __email__     = "giuseppe.larocca@egi.eu"
 __version__   = "$Revision: 0.4"
 __date__      = "$Date: 19/10/2024 11:58:27"
-__copyright__ = "Copyright (c) 2024 EGI Foundation"
+__copyright__ = "Copyright (c) 2025 EGI Foundation"
 __license__   = "Apache Licence v2.0"
 
 
@@ -89,8 +89,10 @@ def get_env_settings():
            
        # EGI Accounting settings
        d['ACCOUNTING_SERVER_URL'] = os.environ['ACCOUNTING_SERVER_URL']
-       d['ACCOUNTING_SCOPE'] = os.environ['ACCOUNTING_SCOPE']
-       d['ACCOUNTING_METRIC'] = os.environ['ACCOUNTING_METRIC']
+       d['CLOUD_ACCOUNTING_SCOPE'] = os.environ['CLOUD_ACCOUNTING_SCOPE']
+       d['CLOUD_ACCOUNTING_METRIC'] = os.environ['CLOUD_ACCOUNTING_METRIC']
+       d['EGI_ACCOUNTING_SCOPE'] = os.environ['EGI_ACCOUNTING_SCOPE']
+       d['EGI_ACCOUNTING_METRIC'] = os.environ['EGI_ACCOUNTING_METRIC']
        d['ACCOUNTING_LOCAL_JOB_SELECTOR'] = os.environ['ACCOUNTING_LOCAL_JOB_SELECTOR']
        d['ACCOUNTING_VO_GROUP_SELECTOR'] = os.environ['ACCOUNTING_VO_GROUP_SELECTOR']
        d['ACCOUNTING_DATA_SELECTOR'] = os.environ['ACCOUNTING_DATA_SELECTOR']
@@ -109,6 +111,7 @@ def get_env_settings():
        d['LOG'] = os.environ['LOG']
        d['DATE_FROM'] = os.environ['DATE_FROM']
        d['DATE_TO'] = os.environ['DATE_TO']
+       d['PAST_YEAR'] = os.environ['PAST_YEAR']
        d['SSL_CHECK'] = os.environ['SSL_CHECK']
        d['REMOVE_EMPTY_VO_METRICS'] = os.environ['REMOVE_EMPTY_VO_METRICS']
        d['VOS_DUPLICATES'] = os.environ['VOS_DUPLICATES']

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#  Copyright 2024 EGI Foundation
+#  Copyright 2025 EGI Foundation
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 
 import datetime
 import json
+import os
 import requests
 import time
 import warnings
@@ -30,9 +31,9 @@ from utils import colourise, get_env_settings
 
 __author__    = "Giuseppe LA ROCCA"
 __email__     = "giuseppe.larocca@egi.eu"
-__version__   = "$Revision: v0.5"
-__date__      = "$Date: 24/11/2024 18:23:17"
-__copyright__ = "Copyright (c) 2024 EGI Foundation"
+__version__   = "$Revision: v0.6"
+__date__      = "$Date: 08/02/2025 18:23:17"
+__copyright__ = "Copyright (c) 2025 EGI Foundation"
 __license__   = "Apache Licence v2.0"
 
 
@@ -50,7 +51,7 @@ def configure_headers(env, worksheet_annual):
     while not status:
      try:
         # Clean the worksheet
-        worksheet_annual.batch_clear(["A3:AQ400"])
+        #worksheet_annual.batch_clear(["A3:AQ400"])
         rules = get_conditional_format_rules(worksheet_annual)
         rules.clear()
 
@@ -132,7 +133,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("L50", "=SUM(L3:L19)")
         worksheet_annual.update_acell("M50", "=SUM(M3:M19)")
         worksheet_annual.update_acell("N50", "=SUM(N3:N19)")
-        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'P3:P50', text_fmt)
         worksheet_annual.update_acell("P3", "Engineering and Technology")
@@ -150,7 +150,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("P15", "Structural Biology")
         worksheet_annual.update_acell("P16", "Neuroscience")
         worksheet_annual.update_acell("P17", "Engineering and Technology")
-        time.sleep (60)
     
         worksheet_annual.update_acell("P19", "Accelerator Physics")
         worksheet_annual.update_acell("P20", "Aeroscpace Engineering")
@@ -187,7 +186,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("R50", "=SUM(R3:R48)")
         worksheet_annual.update_acell("S50", "=SUM(S3:S48)")
         worksheet_annual.update_acell("T50", "=SUM(T3:T48)")
-        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'V3:V50', text_fmt)
         worksheet_annual.update_acell("V3", "Engineering and Technology")
@@ -210,7 +208,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("X50", "=SUM(X3:X22)")
         worksheet_annual.update_acell("Y50", "=SUM(Y3:Y22)")
         worksheet_annual.update_acell("Z50", "=SUM(Z3:Z22)")
-        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'AB3:AB50', text_fmt)
         worksheet_annual.update_acell("AB3", "Engineering and Technology")
@@ -230,7 +227,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("AD50", "=SUM(AD3:AD22)")
         worksheet_annual.update_acell("AF50", "=SUM(AF3:AF22)")
         worksheet_annual.update_acell("AG50", "=SUM(AG3:AG22)")
-        time.sleep (60)
 
         format_cell_range(worksheet_annual, 'AJ5:AJ12', text_fmt)
         worksheet_annual.update_acell("AJ5", "Research Community")
@@ -241,8 +237,6 @@ def configure_headers(env, worksheet_annual):
         worksheet_annual.update_acell("AJ10", "Regional/national initiatives")
         worksheet_annual.update_acell("AJ11", "Training")
         worksheet_annual.update_acell("AJ12", "Infrastructure development")
-        time.sleep (60)
-        
         status = True
    
      except:
@@ -308,6 +302,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH3", "=((AF3-AG3)/AG3)")
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [ENGINEERING AND TECHNOLOGY] discipline")
+       time.sleep (10)
 
        # AGRICULTURAL SCIENCES
        print(colourise("green", "[INFO]"), \
@@ -335,6 +330,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH4", "=((AF4-AG4)/AG4)")    
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [AGRICULTURAL SCIENCES] discipline")
+       time.sleep (10)
 
        # SOCIAL SCIENCES
        print(colourise("green", "[INFO]"), \
@@ -362,6 +358,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH5", "=((AF5-AG5)/AG5)")    
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [SOCIAL SCIENCES] discipline")
+       time.sleep (10)
 
        # HUMANITIES
        print(colourise("green", "[INFO]"), \
@@ -389,6 +386,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH6", "=((AF6-AG6)/AG6)")    
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [HUMANITIES] discipline")
+       time.sleep (10)
 
        # SUPPORT ACTIVITIES
        print(colourise("green", "[INFO]"), \
@@ -416,6 +414,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH7", "=((AF7-AG7)/AG7)")    
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [SUPPORT ACTIVITIES] discipline")
+       time.sleep (10)
 
        # OTHER
        print(colourise("green", "[INFO]"), \
@@ -443,6 +442,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH8", "=((AF8-AG8)/AG8)")    
        print(colourise("green", "[INFO]"), \
        " Updated statistics for the [OTHER] discipline")
+       time.sleep (10)
 
        # MEDICAL AND HEALTH SCIENCES
        print(colourise("green", "[INFO]"), \
@@ -452,6 +452,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("L9", "=SUM(D38:D59)")
        worksheet_annual.update_acell("M9", "=SUM(G38:G59)")
        worksheet_annual.update_acell("N9", "=SUM(H38:H59)")
+       time.sleep (10)
     
        # Basic Medicine
        print(colourise("yellow", "[INFO]"), \
@@ -464,6 +465,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("X9", "=R9+R26")
        worksheet_annual.update_acell("Y9", "=S9+S26")
        worksheet_annual.update_acell("Z9", "=T9+T26")
+       time.sleep (10)
     
        # Bioinformatics
        print(colourise("yellow", "[INFO]"), \
@@ -484,6 +486,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AG10", "=Z10")
        format_cell_range(worksheet_annual, 'AH10', percentage_fmt)
        worksheet_annual.update_acell("AH10", "=((AF10-AG10)/AG10)")    
+       time.sleep (10)
     
        # Biological Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -496,6 +499,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("X11", "=R11+R27")
        worksheet_annual.update_acell("Y11", "=S11+S27")    
        worksheet_annual.update_acell("Z11", "=T11+T27")
+       time.sleep (10)
     
        # Clinical Medicine
        print(colourise("yellow", "[INFO]"), \
@@ -504,6 +508,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R12", "=SUMIFS(D38:D59,A38:A59,P12)")
        worksheet_annual.update_acell("S12", "=SUMIFS(G38:G59,A38:A59,P12)")
        worksheet_annual.update_acell("T12", "=SUMIFS(H38:H59,A38:A59,P12)")
+       time.sleep (10)
 
        # Health Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -512,6 +517,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R13", "=SUMIFS(D38:D59,A38:A59,P13)")
        worksheet_annual.update_acell("S13", "=SUMIFS(G38:G59,A38:A59,P13)")
        worksheet_annual.update_acell("T13", "=SUMIFS(H38:H59,A38:A59,P13)")
+       time.sleep (10)
 
        # Miscellaneous
        print(colourise("yellow", "[INFO]"), \
@@ -520,6 +526,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R14", "=SUMIFS(D38:D59,A38:A59,P14)")
        worksheet_annual.update_acell("S14", "=SUMIFS(G38:G59,A38:A59,P14)")
        worksheet_annual.update_acell("T14", "=SUMIFS(H38:H59,A38:A59,P14)")
+       time.sleep (10)
 
        # Structural Biology
        print(colourise("yellow", "[INFO]"), \
@@ -538,8 +545,9 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AE9", "=((AC9-AD9)/AD9)")
        worksheet_annual.update_acell("AF9", "=Y12")
        worksheet_annual.update_acell("AG9", "=Z12")
-       format_cell_range(worksheet_annual, 'AG9', percentage_fmt)
+       format_cell_range(worksheet_annual, 'AG9', number_fmt)
        worksheet_annual.update_acell("AH9", "=((AF9-AG9)/AG9)")    
+       time.sleep (10)
 
        # Neuroscience
        print(colourise("yellow", "[INFO]"), \
@@ -548,6 +556,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R16", "=SUMIFS(D38:D59,A38:A59,P16)")
        worksheet_annual.update_acell("S16", "=SUMIFS(G38:G59,A38:A59,P16)")
        worksheet_annual.update_acell("T16", "=SUMIFS(H38:H59,A38:A59,P16)")
+       time.sleep (10)
 
        # Engineering and Technology
        print(colourise("yellow", "[INFO]"), \
@@ -556,6 +565,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R17", "=SUMIFS(D38:D59,A38:A59,P17)")
        worksheet_annual.update_acell("S17", "=SUMIFS(G38:G59,A38:A59,P17)")
        worksheet_annual.update_acell("T17", "=SUMIFS(H38:H59,A38:A59,P17)")
+       time.sleep (10)
 
        # Other Life Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -574,6 +584,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH11", "=((AF11-AG11)/AG11)")    
        print(colourise("green", "[INFO]"), \
        " Updated the statistics for the [MEDICAL AND HEALTH SCIENCES] discipline")
+       time.sleep (10)
 
        # NATURAL SCIENCES
        print(colourise("green", "[INFO]"), \
@@ -583,6 +594,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("L19", "=SUM(D61:D211)")
        worksheet_annual.update_acell("M19", "=SUM(G61:G211)")
        worksheet_annual.update_acell("N19", "=SUM(H61:H211)")
+       time.sleep (10)
 
        # Accelerator Physics
        print(colourise("yellow", "[INFO]"), \
@@ -591,6 +603,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R19", "=SUMIFS(D61:D211,A61:A211,P19)")
        worksheet_annual.update_acell("S19", "=SUMIFS(G61:G211,A61:A211,P19)")
        worksheet_annual.update_acell("T19", "=SUMIFS(H61:H211,A61:A211,P19)")
+       time.sleep (10)
 
        # Aerospace Engineering
        print(colourise("yellow", "[INFO]"), \
@@ -599,6 +612,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R20", "=SUMIFS(D61:D211,A61:A211,P20)")
        worksheet_annual.update_acell("S20", "=SUMIFS(G61:G211,A61:A211,P20)")
        worksheet_annual.update_acell("T20", "=SUMIFS(H61:H211,A61:A211,P20)")
+       time.sleep (10)
 
        # Agriculture, Forestry, and Fisheries
        print(colourise("yellow", "[INFO]"), \
@@ -607,6 +621,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R21", "=SUMIFS(D61:D211,A61:A211,P21)")
        worksheet_annual.update_acell("S21", "=SUMIFS(G61:G211,A61:A211,P21)")
        worksheet_annual.update_acell("T21", "=SUMIFS(H61:H211,A61:A211,P21)")
+       time.sleep (10)
 
        # Atomic
        print(colourise("yellow", "[INFO]"), \
@@ -615,6 +630,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R22", "=SUMIFS(D61:D211,A61:A211,P22)")
        worksheet_annual.update_acell("S22", "=SUMIFS(G61:G211,A61:A211,P22)")
        worksheet_annual.update_acell("T22", "=SUMIFS(H61:H211,A61:A211,P22)")
+       time.sleep (10)
 
        # Astronomy
        print(colourise("yellow", "[INFO]"), \
@@ -623,6 +639,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R23", "=SUMIFS(D61:D211,A61:A211,P23)")
        worksheet_annual.update_acell("S23", "=SUMIFS(G61:G211,A61:A211,P23)")
        worksheet_annual.update_acell("T23", "=SUMIFS(H61:H211,A61:A211,P23)")
+       time.sleep (10)
 
        # Astrophysics
        print(colourise("yellow", "[INFO]"), \
@@ -631,6 +648,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R24", "=SUMIFS(D61:D211,A61:A211,P24)")
        worksheet_annual.update_acell("S24", "=SUMIFS(G61:G211,A61:A211,P24)")
        worksheet_annual.update_acell("T24", "=SUMIFS(H61:H211,A61:A211,P24)")
+       time.sleep (10)
 
        # Astroparticle Physics
        print(colourise("yellow", "[INFO]"), \
@@ -639,6 +657,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R25", "=SUMIFS(D61:D211,A61:A211,P25)")
        worksheet_annual.update_acell("S25", "=SUMIFS(G61:G211,A61:A211,P25)")
        worksheet_annual.update_acell("T25", "=SUMIFS(H61:H211,A61:A211,P25)")
+       time.sleep (10)
 
        # Basic Medicine
        print(colourise("yellow", "[INFO]"), \
@@ -647,6 +666,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R26", "=SUMIFS(D61:D211,A61:A211,P26)")
        worksheet_annual.update_acell("S26", "=SUMIFS(G61:G211,A61:A211,P26)")
        worksheet_annual.update_acell("T26", "=SUMIFS(H61:H211,A61:A211,P26)")
+       time.sleep (10)
 
        # Biological Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -655,6 +675,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R27", "=SUMIFS(D61:D211,A61:A211,P27)")
        worksheet_annual.update_acell("S27", "=SUMIFS(G61:G211,A61:A211,P27)")
        worksheet_annual.update_acell("T27", "=SUMIFS(H61:H211,A61:A211,P27)")
+       time.sleep (10)
 
        # Chemical Physics
        print(colourise("yellow", "[INFO]"), \
@@ -663,6 +684,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R28", "=SUMIFS(D61:D211,A61:A211,P28)")
        worksheet_annual.update_acell("S28", "=SUMIFS(G61:G211,A61:A211,P28)")
        worksheet_annual.update_acell("T28", "=SUMIFS(H61:H211,A61:A211,P28)") 
+       time.sleep (10)
 
        # Chemical Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -671,6 +693,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R29", "=SUMIFS(D61:D211,A61:A211,P29)")
        worksheet_annual.update_acell("S29", "=SUMIFS(G61:G211,A61:A211,P29)")
        worksheet_annual.update_acell("T29", "=SUMIFS(H61:H211,A61:A211,P29)")
+       time.sleep (10)
 
        # Civil Engineering
        print(colourise("yellow", "[INFO]"), \
@@ -679,6 +702,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R30", "=SUMIFS(D61:D211,A61:A211,P30)")
        worksheet_annual.update_acell("S30", "=SUMIFS(G61:G211,A61:A211,P30)")
        worksheet_annual.update_acell("T30", "=SUMIFS(H61:H211,A61:A211,P30)")
+       time.sleep (10)
 
        # Climate Research
        print(colourise("yellow", "[INFO]"), \
@@ -687,6 +711,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R31", "=SUMIFS(D61:D211,A61:A211,P31)")
        worksheet_annual.update_acell("S31", "=SUMIFS(G61:G211,A61:A211,P31)")
        worksheet_annual.update_acell("T31", "=SUMIFS(H61:H211,A61:A211,P31)")
+       time.sleep (10)
 
        # Computer Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -695,6 +720,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R32", "=SUMIFS(D61:D211,A61:A211,P32)")
        worksheet_annual.update_acell("S32", "=SUMIFS(G61:G211,A61:A211,P32)")
        worksheet_annual.update_acell("T32", "=SUMIFS(H61:H211,A61:A211,P32)")
+       time.sleep (10)
 
        # Earth Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -703,6 +729,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R33", "=SUMIFS(D61:D211,A61:A211,P33)")
        worksheet_annual.update_acell("S33", "=SUMIFS(G61:G211,A61:A211,P33)")
        worksheet_annual.update_acell("T33", "=SUMIFS(H61:H211,A61:A211,P33)")
+       time.sleep (10)
 
        # Earth Observation
        print(colourise("yellow", "[INFO]"), \
@@ -711,6 +738,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R34", "=SUMIFS(D61:D211,A61:A211,P34)")
        worksheet_annual.update_acell("S34", "=SUMIFS(G61:G211,A61:A211,P34)")
        worksheet_annual.update_acell("T34", "=SUMIFS(H61:H211,A61:A211,P34)")
+       time.sleep (10)
 
        # Ecology Global
        print(colourise("yellow", "[INFO]"), \
@@ -719,6 +747,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R35", "=SUMIFS(D61:D211,A61:A211,P35)")
        worksheet_annual.update_acell("S35", "=SUMIFS(G61:G211,A61:A211,P35)")
        worksheet_annual.update_acell("T35", "=SUMIFS(H61:H211,A61:A211,P35)")
+       time.sleep (10)
 
        # Energy Saving
        print(colourise("yellow", "[INFO]"), \
@@ -727,6 +756,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R36", "=SUMIFS(D61:D211,A61:A211,P36)")
        worksheet_annual.update_acell("S36", "=SUMIFS(G61:G211,A61:A211,P36)")
        worksheet_annual.update_acell("T36", "=SUMIFS(H61:H211,A61:A211,P36)")
+       time.sleep (10)
 
        # Energy and Fuels Global
        print(colourise("yellow", "[INFO]"), \
@@ -735,6 +765,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R37", "=SUMIFS(D61:D211,A61:A211,P37)")
        worksheet_annual.update_acell("S37", "=SUMIFS(G61:G211,A61:A211,P37)")
        worksheet_annual.update_acell("T37", "=SUMIFS(H61:H211,A61:A211,P37)")
+       time.sleep (10)
 
        # Health Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -743,6 +774,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R38", "=SUMIFS(D61:D211,A61:A211,P38)")
        worksheet_annual.update_acell("S38", "=SUMIFS(G61:G211,A61:A211,P38)")
        worksheet_annual.update_acell("T38", "=SUMIFS(H61:H211,A61:A211,P38)")
+       time.sleep (10)
 
        # HEP
        print(colourise("yellow", "[INFO]"), \
@@ -761,8 +793,9 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AE19", "=((AC19-AD19)/AD19)")
        worksheet_annual.update_acell("AF19", "=Y19")
        worksheet_annual.update_acell("AG19", "=Z19")
-       format_cell_range(worksheet_annual, 'AG19', percentage_fmt)
+       format_cell_range(worksheet_annual, 'AG19', number_fmt)
        worksheet_annual.update_acell("AH19", "=((AF19-AG19)/AG19)")
+       time.sleep (10)
 
        # Information Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -771,6 +804,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R40", "=SUMIFS(D61:D211,A61:A211,P40)")
        worksheet_annual.update_acell("S40", "=SUMIFS(G61:G211,A61:A211,P40)")
        worksheet_annual.update_acell("T40", "=SUMIFS(H61:H211,A61:A211,P40)")
+       time.sleep (10)
 
        # Miscellaneous
        print(colourise("yellow", "[INFO]"), \
@@ -779,6 +813,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R41", "=SUMIFS(D61:D211,A61:A211,P41)")
        worksheet_annual.update_acell("S41", "=SUMIFS(G61:G211,A61:A211,P41)")
        worksheet_annual.update_acell("T41", "=SUMIFS(H61:H211,A61:A211,P41)")
+       time.sleep (10)
 
        # Nuclear Physics
        print(colourise("yellow", "[INFO]"), \
@@ -787,6 +822,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R42", "=SUMIFS(D61:D211,A61:A211,P42)")
        worksheet_annual.update_acell("S42", "=SUMIFS(G61:G211,A61:A211,P42)")
        worksheet_annual.update_acell("T42", "=SUMIFS(H61:H211,A61:A211,P42)")
+       time.sleep (10)
 
        # Oceanography
        print(colourise("yellow", "[INFO]"), \
@@ -795,6 +831,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R43", "=SUMIFS(D61:D211,A61:A211,P43)")
        worksheet_annual.update_acell("S43", "=SUMIFS(G61:G211,A61:A211,P43)")
        worksheet_annual.update_acell("T43", "=SUMIFS(H61:H211,A61:A211,P43)")
+       time.sleep (10)
 
        # Optics
        print(colourise("yellow", "[INFO]"), \
@@ -803,6 +840,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R44", "=SUMIFS(D61:D211,A61:A211,P44)")
        worksheet_annual.update_acell("S44", "=SUMIFS(G61:G211,A61:A211,P44)")
        worksheet_annual.update_acell("T44", "=SUMIFS(H61:H211,A61:A211,P44)")
+       time.sleep (10)
 
        # Particle Physics
        print(colourise("yellow", "[INFO]"), \
@@ -811,6 +849,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R45", "=SUMIFS(D61:D211,A61:A211,P45)")
        worksheet_annual.update_acell("S45", "=SUMIFS(G61:G211,A61:A211,P45)")
        worksheet_annual.update_acell("T45", "=SUMIFS(H61:H211,A61:A211,P45)")
+       time.sleep (10)
 
        # Physical Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -819,6 +858,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R46", "=SUMIFS(D61:D211,A61:A211,P46)")
        worksheet_annual.update_acell("S46", "=SUMIFS(G61:G211,A61:A211,P46)")
        worksheet_annual.update_acell("T46", "=SUMIFS(H61:H211,A61:A211,P46)")
+       time.sleep (10)
 
        # Space Sciences
        print(colourise("yellow", "[INFO]"), \
@@ -827,6 +867,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R47", "=SUMIFS(D61:D211,A61:A211,P47)")
        worksheet_annual.update_acell("S47", "=SUMIFS(G61:G211,A61:A211,P47)")
        worksheet_annual.update_acell("T47", "=SUMIFS(H61:H211,A61:A211,P47)")
+       time.sleep (10)
 
        # Structural Biology
        print(colourise("yellow", "[INFO]"), \
@@ -835,14 +876,15 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("R48", "=SUMIFS(D61:D211,A61:A211,P48)")
        worksheet_annual.update_acell("S48", "=SUMIFS(G61:G211,A61:A211,P48)")
        worksheet_annual.update_acell("T48", "=SUMIFS(H61:H211,A61:A211,P48)")
+       time.sleep (10)
 
        # Earth and Environmental Sciences
        print(colourise("yellow", "[INFO]"), \
        " Updating statistics for the [Earth and Environmental Sciences] sub-discipline in progress...")
-       worksheet_annual.update_acell("W20", "=Q33+Q34+Q35")
-       worksheet_annual.update_acell("X20", "=R33+R34+R45")
-       worksheet_annual.update_acell("Y20", "=S33+S34+S45")
-       worksheet_annual.update_acell("Z20", "=T33+T34+T45")
+       worksheet_annual.update_acell("W20", "=Q33+Q34")
+       worksheet_annual.update_acell("X20", "=R33+R34")
+       worksheet_annual.update_acell("Y20", "=S33+S34")
+       worksheet_annual.update_acell("Z20", "=T33+T34")
        worksheet_annual.update_acell("AC20", "=W20")
        worksheet_annual.update_acell("AD20", "=X20")
        format_cell_range(worksheet_annual, 'AE20', percentage_fmt)
@@ -851,18 +893,19 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AG20", "=Z20")    
        format_cell_range(worksheet_annual, 'AH20', percentage_fmt)
        worksheet_annual.update_acell("AH20", "=((AF20-AG20)/AG20)")
+       time.sleep (10)
 
        # Other Physics Sciences
        print(colourise("yellow", "[INFO]"), \
        " Updating statistics for the [Other Physics Sciences] sub-discipline in progress...")
        worksheet_annual.update_acell("W21", \
-       "=Q19+Q20+Q21+Q22+Q28+Q29+Q30+Q31+Q32+Q36+Q37+Q38+Q40+Q41+Q42+Q43+Q44+Q45+Q46+Q47")
+       "=Q19+Q20+Q21+Q22+Q28+Q29+Q30+Q31+Q32+Q35+Q36+Q37+Q38+Q40+Q41+Q42+Q43+Q44+Q45+Q46+Q47")
        worksheet_annual.update_acell("X21", \
-       "=R19+R20+R21+R22+R28+R29+R30+R31+R32+R36+R37+R38+R40+R41+R42+R43+R44+R45+R46+R47")
+       "=R19+R20+R21+R22+R28+R29+R30+R31+R32+R35+R36+R37+R38+R40+R41+R42+R43+R44+R45+R46+R47")
        worksheet_annual.update_acell("Y21", \
-       "=S19+S20+S21+S22+S28+S29+S30+S31+S32+S36+S37+S38+S40+S41+S42+S43+S44+S45+S46+S47")
+       "=S19+S20+S21+S22+S28+S29+S30+S31+S32+S35+S36+S37+S38+S40+S41+S42+S43+S44+S45+S46+S47")
        worksheet_annual.update_acell("Z21", \
-       "=T19+T20+T21+T22+T28+T29+T30+T31+T32+T36+T37+T38+T40+T41+T42+T43+T44+T45+T46+T47")
+       "=T19+T20+T21+T22+T28+T29+T30+T31+T32+T35+T36+T37+T38+T40+T41+T42+T43+T44+T45+T46+T47")
        worksheet_annual.update_acell("AC21", "=W21")
        worksheet_annual.update_acell("AD21", "=X21")
        format_cell_range(worksheet_annual, 'AE21', percentage_fmt)
@@ -871,6 +914,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AG21", "=Z21")
        format_cell_range(worksheet_annual, 'AH21', percentage_fmt)
        worksheet_annual.update_acell("AH21", "=((AF21-AG21)/AG21)")
+       time.sleep (10)
 
        # Astronomy and Astrophysics
        print(colourise("yellow", "[INFO]"), \
@@ -889,9 +933,10 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AH22", "=((AF22-AG22)/AG22)")
        print(colourise("green", "[INFO]"), \
        " Updated the statistics for the [NATURAL SCIENCES] discipline")
+       time.sleep (10)
 
        # Research Community
-       print(colourise("green", "\n[INFO]"), " Updating the summary of the Annual Report in progress...")
+       print(colourise("green", "\n[INFO]"), " Updating the *summary* of the Annual Report in progress...")
        print("\tThis operation may take few minutes to complete. Please wait!")
        print(colourise("yellow", "[INFO]"), \
        " Updating summary statistics for [Research Communities] in progress...")
@@ -907,6 +952,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP5", "=SUMIFS(H4:H303,F4:F303,AJ5)")
        format_cell_range(worksheet_annual, 'AQ5', percentage_fmt)
        worksheet_annual.update_acell("AQ5", "=((AO5-AP5)/AP5)")
+       time.sleep (10)
        
        # Research Infrastructure
        print(colourise("yellow", "[INFO]"), \
@@ -923,6 +969,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP6", "=SUMIFS(H4:H303,F4:F303,AJ6)")
        format_cell_range(worksheet_annual, 'AQ6', percentage_fmt)
        worksheet_annual.update_acell("AQ6", "=((AO6-AP6)/AP6)")    
+       time.sleep (10)
        
        # EC Project
        print(colourise("yellow", "[INFO]"), \
@@ -938,7 +985,8 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AO7", "=SUMIFS(G4:G303,F4:F303,AJ7)")
        worksheet_annual.update_acell("AP7", "=SUMIFS(H4:H303,F4:F303,AJ7)")
        format_cell_range(worksheet_annual, 'AQ7', percentage_fmt)
-       worksheet_annual.update_acell("AQ7", "=((AO7-AP7)/AP7)")      
+       worksheet_annual.update_acell("AQ7", "=((AO7-AP7)/AP7)")     
+       time.sleep (10)
        
        # Piloting (multi-disciplinary)
        print(colourise("yellow", "[INFO]"), \
@@ -955,6 +1003,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP8", "=SUMIFS(H4:H303,F4:F303,AJ8)")
        format_cell_range(worksheet_annual, 'AQ8', percentage_fmt)
        worksheet_annual.update_acell("AQ8", "=((AO8-AP8)/AP8)")    
+       time.sleep (10)
        
        # SME
        print(colourise("yellow", "[INFO]"), \
@@ -971,6 +1020,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP9", "=SUMIFS(H4:H303,F4:F303,AJ9)")
        format_cell_range(worksheet_annual, 'AQ9', percentage_fmt)
        worksheet_annual.update_acell("AQ9", "=((AO9-AP9)/AP9)")    
+       time.sleep (10)
        
        # Regional/national initiatives
        print(colourise("yellow", "[INFO]"), \
@@ -987,6 +1037,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP10", "=SUMIFS(H4:H303,F4:F303,AJ10)")
        format_cell_range(worksheet_annual, 'AQ10', percentage_fmt)
        worksheet_annual.update_acell("AQ10", "=((AO10-AP10)/AP10)")    
+       time.sleep (10)
        
        # Training
        print(colourise("yellow", "[INFO]"), \
@@ -1003,6 +1054,7 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP11", "=SUMIFS(H4:H303,F4:F303,AJ11)")
        format_cell_range(worksheet_annual, 'AQ11', percentage_fmt)
        worksheet_annual.update_acell("AQ11", "=((AO11-AP11)/AP11)")    
+       time.sleep (10)
        
        # Infrastructure development
        print(colourise("yellow", "[INFO]"), \
@@ -1019,13 +1071,69 @@ def aggregate_statistics_per_disciplines(worksheet_annual):
        worksheet_annual.update_acell("AP12", "=SUMIFS(H4:H303,F4:F303,AJ12)")
        format_cell_range(worksheet_annual, 'AQ12', percentage_fmt)
        worksheet_annual.update_acell("AQ12", "=((AO12-AP12)/AP12)")    
+       time.sleep (10)
+
+       # Update Totals
+       worksheet_annual.update_acell("AJ13", "TOTAL")
+       format_cell_range(worksheet_annual, 'AK13', number_fmt)
+       worksheet_annual.update_acell("AK13", "=SUM(AK5:AK12)")
+       format_cell_range(worksheet_annual, 'AL13', number_fmt)
+       worksheet_annual.update_acell("AL13", "=SUM(AL5:AL12)")
+       format_cell_range(worksheet_annual, 'AM13', number_fmt)
+       worksheet_annual.update_acell("AM13", "=SUM(AM5:AM12)")
+       format_cell_range(worksheet_annual, 'AO13', number_fmt)
+       worksheet_annual.update_acell("AO13", "=SUM(AO5:AO12)")
+       format_cell_range(worksheet_annual, 'AP13', number_fmt)
+       worksheet_annual.update_acell("AP13", "=SUM(AP5:AP12)")
 
        print(colourise("green", "[INFO]"), " Updated the summary of the Annual Report")
+       time.sleep (10)
     
     except:          
        print(colourise("red", "[WARNING]"), \
-       "Quota exceeded for metrics: 'Write requests', 'Write requests per minute' for project_number:145652161226")
+       "Quota exceeded for metrics: 'Write requests', and 'Write requests per minute'")
        time.sleep (120)
+
+
+def get_disciplines_ranges(disciplines_index, _discipline):
+    ''' Get the range of the givien scientific discipline in the GSpread Worksheet '''
+
+    found = False
+
+    for discipline in disciplines_index:
+        if discipline['name'] == _discipline:
+           user_current_range = "C" + str(discipline['index']) + ":" + \
+               "C" + str(int(discipline['num_VOs']) + int(discipline['index']) - 1)
+           user_past_range = "=D" + str(discipline['index']) + ":" + \
+               "D" + str(int(discipline['num_VOs']) + int(discipline['index']) - 1)
+
+           # Add fix for the "Natural Sciences" discipline
+           if _discipline == "Natural Sciences":
+              user_current_range = "C" + str(discipline['index']) + ":" + \
+                  "C" + str(int(discipline['num_VOs']) + int(discipline['index']) - 4)
+              user_past_range = "=D" + str(discipline['index']) + ":" + \
+                  "D" + str(int(discipline['num_VOs']) + int(discipline['index']) - 4)
+
+        
+           cpu_current_range = "G" + str(discipline['index']) + ":" + \
+               "G" + str(int(discipline['num_VOs']) + int(discipline['index']) - 1)
+           cpu_past_range = "=H" + str(discipline['index']) + ":" + \
+               "H" + str(int(discipline['num_VOs']) + int(discipline['index']) - 1)
+
+           # Add (temporary?!) fix for the "NATURAL SCIENCES" discipline
+           # The number of VOs published by the EGI Operations Portal is wrong
+           if _discipline == "Natural Sciences":
+              cpu_current_range = "G" + str(discipline['index']) + ":" + \
+                 "G" + str(int(discipline['num_VOs']) + int(discipline['index']) - 4)
+              cpu_past_range = "=H" + str(discipline['index']) + ":" + \
+                 "H" + str(int(discipline['num_VOs']) + int(discipline['index']) - 4)
+
+           found = True
+
+    if found:
+       return(user_current_range, user_past_range, cpu_current_range, cpu_past_range)
+    else:
+       return("", "", "", "")
 
 
 def set_conditional_formatting(worksheet_annual, rules, cols_01, cols_02, cols_03, cols_04):
@@ -1072,7 +1180,6 @@ def set_conditional_formatting(worksheet_annual, rules, cols_01, cols_02, cols_0
     rules.append(rule_users_02)
     rules.append(rule_cpus_01)
     rules.append(rule_cpus_02)
-
     rules.save()
 
 
@@ -1110,7 +1217,7 @@ def get_CRM3_statistics(env, worksheet_users_slas):
 
 
 def get_SLA_VO_metrics(VOs_list, vo_name):
-    ''' Get the metrics of a given VO from the "Num. of Users behind SLAs" tab '''
+    ''' Get the VO users behind an SLA (From the "Num. of Users behind SLAs") tab '''
 
     total_users = 0
 
@@ -1126,12 +1233,13 @@ def create_Report(worksheet_annual, disciplines, SLAs_VOs_metrics, other_VOs_use
  
     vos_duplicates = []
     vos_list = []
+    disciplines_index = []
     index = 3
     pos = 1
 
-    # Set the header for the disciplines
+    # Set the header for the scientific disciplines
     text_fmt = cellFormat(
-             backgroundColor=color(1, 1, 0), # Yellow
+             backgroundColor = color(1, 1, 0), # Yellow
              borders = borders(bottom = border('SOLID')),
              padding = padding(bottom = 3),
              textFormat = textFormat(
@@ -1171,11 +1279,20 @@ def create_Report(worksheet_annual, disciplines, SLAs_VOs_metrics, other_VOs_use
 
             # Updating the cells of the Google Worksheet
             worksheet_annual.update_cell(index, 1, discipline_metrics['discipline'])
-            worksheet_annual.update_cell(index, 2, discipline_metrics['num_VOs'])
-            worksheet_annual.update_cell(index, 3, discipline_metrics['total_Users'])
+            #worksheet_annual.update_cell(index, 2, discipline_metrics['num_VOs'])
+            #worksheet_annual.update_cell(index, 3, discipline_metrics['total_Users'])
+            time.sleep (15)
+            
             print(colourise("cyan", "[INFO]"), " Updating metrics of the VOs in progress...")
 
             pos = index + 1
+
+            # Saving index (for the aggregation)
+            disciplines_index.append({
+                "name": discipline_metrics['discipline'],
+                "num_VOs": discipline_metrics['num_VOs'],
+                "index": pos
+            })
 
             try:
                 for vo_details in discipline_metrics['vo']:
@@ -1185,7 +1302,13 @@ def create_Report(worksheet_annual, disciplines, SLAs_VOs_metrics, other_VOs_use
                     # additional stats were collected during CRM3 interviews
                     _users = get_SLA_VO_metrics(SLAs_VOs_metrics, vo_details['name'])
                     if _users:
+                       print(colourise("yellow", "[INFO]"), \
+                       " [CRM3]: An active SLA was found for the VO [%s]" %vo_details['name'])
                        _total = float(_users) + float(vo_details['num_Users'])
+                       print(colourise("yellow", "[INFO]"), \
+                       " [CRM3]: Users' statistics collected during the last CRM3 process: %s" %_users)
+                       print(colourise("yellow", "[INFO]"), \
+                       " [CRM3]: Total users from the EGI Operations Portal: %s" %vo_details['num_Users'])
 
                     worksheet_annual.update_cell(pos, 1, vo_details['discipline'])
                     worksheet_annual.update_cell(pos, 2, vo_details['name'])
@@ -1239,6 +1362,7 @@ def create_Report(worksheet_annual, disciplines, SLAs_VOs_metrics, other_VOs_use
                            vo_details['current CPU/h']))
 
                     index = pos    
+                    time.sleep (15)
 
             except:
                 print(colourise("red", "[WARNING]"), \
@@ -1246,7 +1370,7 @@ def create_Report(worksheet_annual, disciplines, SLAs_VOs_metrics, other_VOs_use
                 time.sleep (120)
                 index = pos    
 
-    return(vos_duplicates)
+    return(vos_duplicates, disciplines_index)
 
 
 def main():
@@ -1266,11 +1390,6 @@ def main():
     print(colourise("green", "\n[%s]" %env['LOG']), "Environmental settings")
     print(json.dumps(env, indent=4))
 
-    # Fetching the "disciplines" metrics from the EGI Operations Portal
-    #print(colourise("green", "\n[%s]" %env['LOG']), \
-    #      "Downloading the *discipline metrics* from the EGI's Operations Portal in progress...")
-    #print("\tThis operation may take few minutes to complete. Please wait!")
-
     file2 = open(env['VOS_METADATA'])
     print(colourise("green", "\n[%s]" %env['LOG']), \
     "Loading VOs metadata from file: env['VOS_METADATA']")
@@ -1279,7 +1398,7 @@ def main():
     # Initialize the GSpreads Worksheets
     worksheet_annual, worksheet_past, worksheet_users_slas = init_GWorkSheet(env)
 
-    # 1.Getting stats from CRM3 interviews
+    # 1.Get statistics from CRM3 interviews
     print(colourise("green", "[%s]" %env['LOG']), \
     "Loading *statistics* about users from *CRM3 interviews* in progress...")
     SLAs_VOs_metrics = get_CRM3_statistics(env, worksheet_users_slas)
@@ -1302,10 +1421,19 @@ def main():
         with open('data.json', 'w', encoding='utf-8') as file:
              json.dump(disciplines, file, ensure_ascii=False, indent=4)
 
-    # Temporary solution
+    # INFO: Just for testing
     #status_code = 200
     #file = open("./data.json")
     #disciplines = json.load(file)
+    #disciplines_index = []
+    #disciplines_index.append({"name": "Engineering and Technology", "num_VOs": "33", "index": "4"})
+    #disciplines_index.append({"name": "Medical and Health Sciences", "num_VOs": "22", "index": "38"})
+    #disciplines_index.append({"name": "Natural Sciences", "num_VOs": "154", "index": "61"})
+    #disciplines_index.append({"name": "Agricultural Sciences", "num_VOs": "10", "index": "213"})
+    #disciplines_index.append({"name": "Social Sciences", "num_VOs": "12", "index": "224"})
+    #disciplines_index.append({"name": "Humanities", "num_VOs": "11", "index": "237"})
+    #disciplines_index.append({"name": "Support Activities", "num_VOs": "46", "index": "249"})
+    #disciplines_index.append({"name": "Other", "num_VOs": "5", "index": "296"})
 
     index = 3
     pos = 1
@@ -1313,70 +1441,142 @@ def main():
     if (status_code == 200):
        # 4. Initialize the headers of the GSpread Worksheet
        # WARNING: This operation may take few minutes to complete!
-       configure_headers(env, worksheet_annual)
+       #configure_headers(env, worksheet_annual)
 
        # 5. Update the GSpread Worksheet with the data for the Annual Report
        # WARNING: This operation may take few minutes to complete!
-       vos_duplicates = create_Report(
+       vos_duplicates, disciplines_index = create_Report(
                worksheet_annual, 
                disciplines, 
                SLAs_VOs_metrics,
                other_VOs_users)
 
        # 6. Setting Conditional Formatting rules in the GSpread Worksheet
-       print(colourise("green", "\n[DEBUG]"), \
+       print(colourise("green", "\n[%s]" %env['LOG']), \
        "Setting Conditional Formatting rules in progress...")
        rules = get_conditional_format_rules(worksheet_annual)
 
-       # 1.) ENGINEERING AND TECHNOLOGY
+       # 6.1) ENGINEERING AND TECHNOLOGY
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [ENGINEERING AND TECHNOLOGY] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Engineering and Technology")
+      
        set_conditional_formatting(
                worksheet_annual, rules, 
-               "C4:C36", ['=D4:D36'], 
-               "G4:G36", ['=H4:H36'])
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 2.) MEDICAL AND HEALTH SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [ENGINEERING AND TECHNOLOGY] discipline has been set!")
+
+       # 6.2) MEDICAL AND HEALTH SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [ENGINEERING AND TECHNOLOGY] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Medical and Health Sciences")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C38:C59", ['=D38:D59'], 
-               "G38:G59", ['=H38:H59'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 3.) NATURAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [MEDICAL AND HEALTH SCIENCES] discipline has been set!")
+
+       # 6.3) NATURAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [NATURAL SCIENCES] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Natural Sciences")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C61:C211", ['=D61:D211'], 
-               "G61:G211", ['=H61:H211'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 4.) AGRICULTURAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [NATURAL SCIENCES] discipline has been set!")
+
+       # 6.4) AGRICULTURAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [AGRICULTURAL SCIENCES] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Agricultural Sciences")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C213:C222", ['=D213:D222'], 
-               "G213:G222", ['=H213:H222'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 5.) SOCIAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [AGRICULTURAL SCIENCES] discipline has been set!")
+
+       # 6.5) SOCIAL SCIENCES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [SOCIAL SCIENCES] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Social Sciences")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C224:C235", ['=D224:D235'], 
-               "G224:G235", ['=H224:H235'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 6.) HUMANITIES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [SOCIAL SCIENCES] discipline has been set!")
+
+       # 6.6) HUMANITIES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [HUMANITIES] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Humanities")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C237:C247", ['=D237:D247'], 
-               "G237:G247", ['=H237:H247'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 7.) SUPPORT ACTIVITIES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [HUMANITIES] discipline has been set!")
+
+       # 6.7) SUPPORT ACTIVITIES
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [SUPPORT ACTIVITIES] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Support Activities")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C249:C294", ['=D249:D294'], 
-               "G249:G294", ['=H249:H294'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 8.) OTHER
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [SUPPORT ACTIVITIES] discipline has been set!")
+
+       # 6.8) OTHER
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Get index ranges for the [OTHER] discipline in progress...")
+       user_current_range, user_past_range, \
+       cpu_current_range, cpu_past_range = \
+       get_disciplines_ranges(disciplines_index, "Other")
+
        set_conditional_formatting(
-               worksheet_annual, rules, 
-               "C296:C300", ['=D296:D300'], 
-               "G296:G300", ['=H296:H300'])
+               worksheet_annual, rules,
+               user_current_range, user_past_range.split(),
+               cpu_current_range, cpu_past_range.split())
 
-       # 9.) Users and CPUs
+       print(colourise("yellow", "[%s]" %env['LOG']), \
+       "Conditional Formatting rules for the [OTHER] discipline has been set!")
+
+       # 6.9) Users and CPUs
        set_conditional_formatting(
                worksheet_annual, rules, 
                "AL5:AL12", ['=AM5:AM12'], 
@@ -1390,14 +1590,11 @@ def main():
                worksheet_annual, rules, 
                "AQ5:AQ12", ['0'], "AQ5:AQ12", ['0'])
        
-       print(colourise("green", "[DEBUG]"), " Conditional Formatting rules set!")
-
-       # 7. Producing final statistics per scientific disciplines
+       # 7. Aggregate final statistics per scientific disciplines
        print(colourise("green", "\n[DEBUG]"), \
        "Aggregating statistics per scientific disciplines in progress...")
        print("\tThis operation may take few minutes to complete. Please wait!")
        aggregate_statistics_per_disciplines(worksheet_annual)
-       print(colourise("green", "[INFO]"), " Done!")
 
        if len(vos_duplicates):
           print(colourise("red", "\n[WARNING]"), \
@@ -1405,15 +1602,21 @@ def main():
           print("\t   Please remove VOs duplications from the Annual Report")
           print("\t   This operation requires manual intervention")
           print(vos_duplicates)
+
+          with open(os.getcwd() + "/" + env['VOS_DUPLICATES'], 'w') as f:
+           for item in vos_duplicates:
+               f.write("%s\n" %item)
+
+          f.close()  
        
        print(colourise("green", "\n[INFO]"), \
-       " EGI Annual Report for the year [%s] has been successfully created!" %env['DATE_TO'][0:4])
+       " The EGI Annual Report for the year [%s] has been successfully created!" %env['DATE_TO'][0:4])
 
        # Update timestamp of the last update
        worksheet_annual.insert_note("A1","Last update on: \n" + timestamp)
 
     else:
-       print("Error!")
+       print(colourise("red", "[WARNING]"), "Stop!")
 
 
 if __name__ == "__main__":

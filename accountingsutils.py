@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#  Copyright 2024 EGI Foundation
+#  Copyright 2025 EGI Foundation
 # 
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -23,38 +23,50 @@ from utils import colourise
 
 __author__    = "Giuseppe LA ROCCA"
 __email__     = "giuseppe.larocca@egi.eu"
-__version__   = "$Revision: 0.2"
-__date__      = "$Date: 20/11/2024 11:58:27"
-__copyright__ = "Copyright (c) 2024 EGI Foundation"
+__version__   = "$Revision: 0.3"
+__date__      = "$Date: 08/02/2025 11:58:27"
+__copyright__ = "Copyright (c) 2025 EGI Foundation"
 __license__   = "Apache Licence v2.0"
 
 
-def login_accounting(env, vo_name):
+def login_accounting(env, vo_name, scope):
     ''' Connecting to the EGI Accounting Portal '''
 
     response = ""
-    _url = "%s/%s/%s/REGION/YEAR/%s/%s/custom-%s/%s/%s/" %(env['ACCOUNTING_SERVER_URL'],
-            env['ACCOUNTING_SCOPE'],
-            env['ACCOUNTING_METRIC'],
+
+    if (env['CLOUD_ACCOUNTING_SCOPE'] == scope):
+        
+       _url = "%s/%s/%s/REGION/YEAR/%s/%s/custom-%s/%s/%s/" %(env['ACCOUNTING_SERVER_URL'],
+            env['CLOUD_ACCOUNTING_SCOPE'],
+            env['CLOUD_ACCOUNTING_METRIC'],
             env['DATE_FROM'],
             env['DATE_TO'],
             vo_name,
             env['ACCOUNTING_LOCAL_JOB_SELECTOR'],
             env['ACCOUNTING_DATA_SELECTOR'])
     
-    #_url = "%s/%s/%s/VO/Year/%s/%s/custom-%s/%s/%s/" %(env['ACCOUNTING_SERVER_URL'],
-    #        env['ACCOUNTING_SCOPE'],
-    #        env['ACCOUNTING_METRIC'],
-    #        env['DATE_FROM'],
-    #        env['DATE_TO'],
-    #        vo_name,
-    #        env['ACCOUNTING_LOCAL_JOB_SELECTOR'],
-    #        env['ACCOUNTING_DATA_SELECTOR'])
+       #_url = "%s/%s/%s/VO/Year/%s/%s/custom-%s/%s/%s/" %(env['ACCOUNTING_SERVER_URL'],
+       #        env['CLOUD_ACCOUNTING_SCOPE'],
+       #        env['CLOUD_ACCOUNTING_METRIC'],
+       #        env['DATE_FROM'],
+       #        env['DATE_TO'],
+       #        vo_name,
+       #        env['ACCOUNTING_LOCAL_JOB_SELECTOR'],
+       #        env['ACCOUNTING_DATA_SELECTOR'])
+    
+    else:
+
+       _url = "%s/%s/%s/REGION/YEAR/%s/%s/custom-%s/%s/%s/" %(env['ACCOUNTING_SERVER_URL'],
+            env['EGI_ACCOUNTING_SCOPE'],
+            env['EGI_ACCOUNTING_METRIC'],
+            env['DATE_FROM'],
+            env['DATE_TO'],
+            vo_name,
+            env['ACCOUNTING_LOCAL_JOB_SELECTOR'],
+            env['ACCOUNTING_DATA_SELECTOR'])
 
     headers = { "Accept": "Application/json" }
 
-    print(colourise("cyan", "[INFO]"), \
-    " Fetching accounting records for the [%s] VO in progress..." %vo_name)
     response = requests.get(
             url = _url, 
             headers = headers, 
